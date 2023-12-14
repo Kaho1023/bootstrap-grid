@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to load CSS bootstrap 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    "
+    />
+
+    <link rel="stylesheet" href="styles.css">
+
+
+
+    <title>Email Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MAIL</a>
+    
+        <!--toggle button-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!--navbar links-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <!-- Compose -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Compose</a>
+            </li>
+            <!-- Delete -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Delete</a>
+            </li>
+            <!-- Mailbox -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mailbox
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Inbox</a></li>
+                <li><a class="dropdown-item" href="#">Trash</a></li>
+                <li><a class="dropdown-item" href="#">Send</a></li>
+                <li><a class="dropdown-item" href="#">Important</a></li>
+                <li><a class="dropdown-item" href="#">Drafts</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--inbox and mail-->
+    <div class="container vh-100">
+    
+
+      <div class="row mt-3 h-100">
+      
+    
+        <div class="col-sm-4 border-end h-100">
+          
+          <h2 class="title">Inbox</h2>
+
+          <form class="d-flex mb-3" role="search" >
+            <input class="form-control me-2 border-2px" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+    
+          <div class="card mb-3">
+            <div class="card-header">
+               Booking hotels  
+            </div>
+            <div class="card-body">
+               Book for Thanksgivin ASAP. Thanksgiving is just about here!
+            </div>
+          </div>
+    
+          <div class="card mb-3">
+            <div class="card-header">
+               Yoko Moon
+            </div>
+            <div class="card-body">
+               I will teach you all about bootstrap   
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header">
+               Venmo
+            </div>
+            <div class="card-body">
+               Haruka send you $300  
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header">
+               Kim
+            </div>
+            <div class="card-body">
+               Hey! What are you doing? 
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header">
+               Flight confirmation
+            </div>
+            <div class="card-body">
+               We are looking forward to you flight with us soon! 
+            </div>
+          </div>
+    
+
+        </div>
+    
+        <div class="col-sm-8 ml-4">
+          
+          <h2 class="title">Mail</h2>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="mail@email.com" />  
+              </div>
+            </div>
+          
+            <div class="card-body">
+          
+              <h4>
+                Summary about this project
+              </h4>
+
+              <p></p>
+              
+              <p>
+                I frequently visit the Bootstrap homepage, where I copy the basic code for my projects. However, I often encounter new code, making it challenging to understand how each element functions. Despite the difficulty, this has provided a valuable opportunity for me to learn about the overall structure of Bootstrap.
+              </p>
+          
+            </div>
+          
+            <div class="card-footer d-flex justify-content-end">
+              <button type="submit" class="btn">Send</button>
+            </div>
+          
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </div>
+
+    <!-- Link to load JS from bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
