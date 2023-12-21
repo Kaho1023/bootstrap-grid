@@ -12,6 +12,11 @@
     background-color:rgb(242, 232, 240);
   }
 
+  .sticky-top{
+    background-color: #fafafa;
+    margin: 0;
+  }
+
   .navbar-brand {
     font-size: 30px; 
     font-family: 'Alata', sans-serif;
