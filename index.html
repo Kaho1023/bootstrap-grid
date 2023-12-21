@@ -5,22 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link to load CSS bootstrap 5 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
-    "
-    />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css "/>
+    
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/38607669b5.js" crossorigin="anonymous"></script>
 
 
 
     <title>Email Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-md ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">MAIL</a>
+        <a class="navbar-brand" href="#">Hello Kaho</a>
     
         <!--toggle button-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,46 +27,73 @@
     
         <!--navbar links-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <!-- Compose -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">Compose</a>
+          <ul class="navbar-nav md-auto">
+            
+            <li class="nav-item d-md-none">
+              <a class="nav-link" href="#">Inbox</a>
             </li>
-            <!-- Delete -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">Delete</a>
+            
+            <li class="nav-item  d-md-none">
+              <a class="nav-link" href="#">Trash</a>
             </li>
-            <!-- Mailbox -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Mailbox
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Inbox</a></li>
-                <li><a class="dropdown-item" href="#">Trash</a></li>
-                <li><a class="dropdown-item" href="#">Send</a></li>
-                <li><a class="dropdown-item" href="#">Important</a></li>
-                <li><a class="dropdown-item" href="#">Drafts</a></li>
-              </ul>
+            
+            <li class="nav-item  d-md-none">
+              <a class="nav-link" href="#">Send</a>
             </li>
+
+            <li class="nav-item  d-md-none">
+              <a class="nav-link" href="#">Important</a>
+            </li>
+
+            <li class="nav-item  d-md-none">
+              <a class="nav-link" href="#">Draft</a>
+            </li>
+        
           </ul>
         </div>
       </div>
     </nav>
-    <!--inbox and mail-->
-    <div class="container vh-100">
-    
 
-      <div class="row mt-3 h-100">
-      
+    <!--inbox and mail-->
     
-        <div class="col-sm-4 border-end h-100">
+      <div class="row vh-100">
+        <!--menu-->
+        <div class="col-sm-2 boder-end h-100 d-none d-md-block border-end px-3 menu pt-3">
+          
+          <h2 class="title">Menu</h2>
+
+          <button class="btn mt-3">Compose</button>
+                   
+          <li class="nav-item d-flex align-items-center  mt-3">
+              <i class="fa-solid fa-inbox mx-1"></i>
+              <a class="nav-link" href="#">Inbox</a>
+          </li>
+          
+          <li class="nav-item d-flex align-items-center mt-3">
+              <i class="fa-solid fa-flag mx-1"></i>
+              <a class="nav-link" href="#">Flagged</a>
+          </li>
+
+          <li class="nav-item d-flex align-items-center  mt-3">
+              <i class="fa-regular fa-paper-plane mx-1"></i>
+              <a class="nav-link" href="#">Sent</a>
+          </li>
+
+          <li class="nav-item d-flex align-items-center  mt-3">
+            <i class="fa-solid fa-trash mx-1"></i>  
+            <a class="nav-link" href="#">Trash</a>
+          </li>
+          
+        </div> 
+
+        <!--inbox-->
+        <div class="col-sm-4 border-end h-100 pt-3">
           
           <h2 class="title">Inbox</h2>
 
           <form class="d-flex mb-3" role="search" >
-            <input class="form-control me-2 border-2px" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit">Search</button>
           </form>
     
           <div class="card mb-3">
@@ -76,7 +101,7 @@
                Booking hotels  
             </div>
             <div class="card-body">
-               Book for Thanksgivin ASAP. Thanksgiving is just about here!
+               Book for Thanksgiving ASAP. Thanksgiving is just about here!
             </div>
           </div>
     
@@ -94,7 +119,7 @@
                Venmo
             </div>
             <div class="card-body">
-               Haruka send you $300  
+               Haruka sent you $300  
             </div>
           </div>
 
@@ -118,8 +143,8 @@
     
 
         </div>
-    
-        <div class="col-sm-8 ml-4">
+        <!--mail-->
+        <div class="col-sm-6 flex justify-content-center pt-3">
           
           <h2 class="title">Mail</h2>
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@500&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@500&family=Playfair+Display:ital@1&family=Roboto:ital,wght@1,300&display=swap');
 .border-end {
     border-right: 1px solid #dee2e6 !important;
   }
@@ -6,6 +6,10 @@
   
   .navbar{
     background: linear-gradient(to right, rgb(255, 105, 180), rgb(135, 206, 250));
+  }
+
+  .menu{
+    background-color:rgb(242, 232, 240);
   }
 
   .navbar-brand {
@@ -33,6 +37,7 @@
   }
 
   .btn{
+    font-family: 'Alata', sans-serif;
     background: linear-gradient(to right, rgb(247, 165, 206), rgb(249, 240, 246));
 
   }
